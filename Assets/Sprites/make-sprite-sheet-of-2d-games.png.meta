@@ -1,0 +1,755 @@
+fileFormatVersion: 2
+guid: c1a67bfbf35e628488e6c839667c43d5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4579342201840567105
+    second: make-sprite-sheet-of-2d-games_0
+  - first:
+      213: 2934651071182991070
+    second: make-sprite-sheet-of-2d-games_1
+  - first:
+      213: -5984799785446535287
+    second: make-sprite-sheet-of-2d-games_2
+  - first:
+      213: -7542236682122979727
+    second: make-sprite-sheet-of-2d-games_3
+  - first:
+      213: 452283373649641259
+    second: make-sprite-sheet-of-2d-games_4
+  - first:
+      213: 6413419513133684852
+    second: make-sprite-sheet-of-2d-games_5
+  - first:
+      213: 2702806597748264240
+    second: make-sprite-sheet-of-2d-games_6
+  - first:
+      213: -1377033191222121722
+    second: make-sprite-sheet-of-2d-games_7
+  - first:
+      213: -430037112878882528
+    second: make-sprite-sheet-of-2d-games_8
+  - first:
+      213: -8155287901335261434
+    second: make-sprite-sheet-of-2d-games_9
+  - first:
+      213: 6246834609896386122
+    second: make-sprite-sheet-of-2d-games_10
+  - first:
+      213: 4203361479114835644
+    second: make-sprite-sheet-of-2d-games_11
+  - first:
+      213: -9160515429062871968
+    second: make-sprite-sheet-of-2d-games_12
+  - first:
+      213: 4876178068399332519
+    second: make-sprite-sheet-of-2d-games_13
+  - first:
+      213: -3642376082372026353
+    second: make-sprite-sheet-of-2d-games_14
+  - first:
+      213: -6253516238496635810
+    second: make-sprite-sheet-of-2d-games_15
+  - first:
+      213: -7388377490281850600
+    second: make-sprite-sheet-of-2d-games_16
+  - first:
+      213: -3605420611989620587
+    second: make-sprite-sheet-of-2d-games_17
+  - first:
+      213: 384405304300769979
+    second: make-sprite-sheet-of-2d-games_18
+  - first:
+      213: -1868635985664731541
+    second: make-sprite-sheet-of-2d-games_19
+  - first:
+      213: -6865952878705043768
+    second: make-sprite-sheet-of-2d-games_20
+  - first:
+      213: 3632831252263807086
+    second: make-sprite-sheet-of-2d-games_21
+  - first:
+      213: -4932621482663805077
+    second: make-sprite-sheet-of-2d-games_22
+  - first:
+      213: -5177420301673086797
+    second: make-sprite-sheet-of-2d-games_23
+  - first:
+      213: 4498178467698994909
+    second: make-sprite-sheet-of-2d-games_24
+  - first:
+      213: 2946269289981928125
+    second: make-sprite-sheet-of-2d-games_25
+  - first:
+      213: 7551791964227950215
+    second: make-sprite-sheet-of-2d-games_26
+  - first:
+      213: 6795501896105456959
+    second: make-sprite-sheet-of-2d-games_27
+  - first:
+      213: -6287257629028277209
+    second: make-sprite-sheet-of-2d-games_28
+  - first:
+      213: -5758401857556702513
+    second: make-sprite-sheet-of-2d-games_29
+  - first:
+      213: 5180363746244324249
+    second: make-sprite-sheet-of-2d-games_30
+  - first:
+      213: 8748655378035467477
+    second: make-sprite-sheet-of-2d-games_31
+  - first:
+      213: -6454251658533041696
+    second: make-sprite-sheet-of-2d-games_32
+  - first:
+      213: -6708194087328509134
+    second: make-sprite-sheet-of-2d-games_33
+  - first:
+      213: -851572029750782955
+    second: make-sprite-sheet-of-2d-games_34
+  - first:
+      213: -4082983453733175125
+    second: make-sprite-sheet-of-2d-games_35
+  - first:
+      213: 656968945158893064
+    second: make-sprite-sheet-of-2d-games_36
+  - first:
+      213: -6223953000658635979
+    second: make-sprite-sheet-of-2d-games_37
+  - first:
+      213: -2594037316756815898
+    second: make-sprite-sheet-of-2d-games_38
+  - first:
+      213: 6257220885095256508
+    second: make-sprite-sheet-of-2d-games_39
+  - first:
+      213: -5731055650832038658
+    second: make-sprite-sheet-of-2d-games_40
+  - first:
+      213: 5503990399801869518
+    second: make-sprite-sheet-of-2d-games_41
+  - first:
+      213: -8281525160125013778
+    second: make-sprite-sheet-of-2d-games_42
+  - first:
+      213: 4484404545705781058
+    second: make-sprite-sheet-of-2d-games_43
+  - first:
+      213: 7521502503161510890
+    second: make-sprite-sheet-of-2d-games_44
+  - first:
+      213: 6510750220545803102
+    second: make-sprite-sheet-of-2d-games_45
+  - first:
+      213: -3929905381698897171
+    second: make-sprite-sheet-of-2d-games_46
+  - first:
+      213: -8795277098911015727
+    second: make-sprite-sheet-of-2d-games_47
+  - first:
+      213: -1214194898481577705
+    second: make-sprite-sheet-of-2d-games_48
+  - first:
+      213: -5223296582417358466
+    second: make-sprite-sheet-of-2d-games_49
+  - first:
+      213: -7160444077262310475
+    second: make-sprite-sheet-of-2d-games_50
+  - first:
+      213: -4310569865443966496
+    second: make-sprite-sheet-of-2d-games_51
+  - first:
+      213: 6959670820612691842
+    second: make-sprite-sheet-of-2d-games_52
+  - first:
+      213: 8748054989005594358
+    second: make-sprite-sheet-of-2d-games_53
+  - first:
+      213: 555675064880899543
+    second: make-sprite-sheet-of-2d-games_54
+  - first:
+      213: -7292986642250770387
+    second: make-sprite-sheet-of-2d-games_55
+  - first:
+      213: -1176969004904497556
+    second: make-sprite-sheet-of-2d-games_56
+  - first:
+      213: 2317845528695860492
+    second: make-sprite-sheet-of-2d-games_57
+  - first:
+      213: 4907895390416313067
+    second: make-sprite-sheet-of-2d-games_58
+  - first:
+      213: -2194534414249933178
+    second: make-sprite-sheet-of-2d-games_59
+  - first:
+      213: -3456017006945212710
+    second: make-sprite-sheet-of-2d-games_60
+  - first:
+      213: 6656507483243542219
+    second: make-sprite-sheet-of-2d-games_61
+  - first:
+      213: 11822025843160523
+    second: make-sprite-sheet-of-2d-games_62
+  - first:
+      213: 9170434600256691746
+    second: make-sprite-sheet-of-2d-games_63
+  - first:
+      213: -272974511985752923
+    second: make-sprite-sheet-of-2d-games_64
+  - first:
+      213: 7292570601529621705
+    second: make-sprite-sheet-of-2d-games_65
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: make-sprite-sheet-of-2d-games_0
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 552
+        width: 130
+        height: 168
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14389ad58771d8f30800000000000000
+      internalID: 4579342201840567105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: make-sprite-sheet-of-2d-games_1
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 552
+        width: 130
+        height: 168
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edee49dc999f9b820800000000000000
+      internalID: 2934651071182991070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: make-sprite-sheet-of-2d-games_2
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 552
+        width: 130
+        height: 168
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98f00a0dd48b1fca0800000000000000
+      internalID: -5984799785446535287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: make-sprite-sheet-of-2d-games_3
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 552
+        width: 130
+        height: 168
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1769326b2b7945790800000000000000
+      internalID: -7542236682122979727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: make-sprite-sheet-of-2d-games_4
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 552
+        width: 130
+        height: 168
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2fb3300555d64600800000000000000
+      internalID: 452283373649641259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: make-sprite-sheet-of-2d-games_5
+      rect:
+        serializedVersion: 2
+        x: 812
+        y: 552
+        width: 130
+        height: 168
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47854e3411b010950800000000000000
+      internalID: 6413419513133684852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: make-sprite-sheet-of-2d-games_6
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 21
+        width: 130
+        height: 168
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03d0e53d74c428520800000000000000
+      internalID: 2702806597748264240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: make-sprite-sheet-of-2d-games_7
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 263
+        width: 130
+        height: 168
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60b6841cb9bc3ece0800000000000000
+      internalID: -1377033191222121722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: make-sprite-sheet-of-2d-games_8
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 264
+        width: 130
+        height: 168
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 021ae963683380af0800000000000000
+      internalID: -430037112878882528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: make-sprite-sheet-of-2d-games_9
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 264
+        width: 130
+        height: 168
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60feedfbcd892de80800000000000000
+      internalID: -8155287901335261434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: make-sprite-sheet-of-2d-games_10
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 263
+        width: 130
+        height: 168
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4e6d750bf631b650800000000000000
+      internalID: 6246834609896386122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: make-sprite-sheet-of-2d-games_11
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 6
+        width: 130
+        height: 168
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb64331bef6555a30800000000000000
+      internalID: 4203361479114835644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: make-sprite-sheet-of-2d-games_12
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 20
+        width: 130
+        height: 168
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 064f83370cf4fd080800000000000000
+      internalID: -9160515429062871968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: make-sprite-sheet-of-2d-games_13
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 23
+        width: 130
+        height: 168
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b7e9661d6cd0034f9065bb05e8d2f65
+      internalID: 4876178068399332519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: make-sprite-sheet-of-2d-games_14
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 25
+        width: 130
+        height: 168
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00f7239110a1c244a9063458c882a7ca
+      internalID: -3642376082372026353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: make-sprite-sheet-of-2d-games_15
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 264
+        width: 130
+        height: 168
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bcd9d0b3566d1e46b003e7946b38077
+      internalID: -6253516238496635810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: make-sprite-sheet-of-2d-games_16
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 263
+        width: 130
+        height: 168
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb0800563d92ab6459fc5870240bc1ab
+      internalID: -7388377490281850600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: c80df9b3172160b44ae82cb2d2484d6d
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      make-sprite-sheet-of-2d-games_0: 4579342201840567105
+      make-sprite-sheet-of-2d-games_1: 2934651071182991070
+      make-sprite-sheet-of-2d-games_10: 6246834609896386122
+      make-sprite-sheet-of-2d-games_11: 4203361479114835644
+      make-sprite-sheet-of-2d-games_12: -9160515429062871968
+      make-sprite-sheet-of-2d-games_13: 4876178068399332519
+      make-sprite-sheet-of-2d-games_14: -3642376082372026353
+      make-sprite-sheet-of-2d-games_15: -6253516238496635810
+      make-sprite-sheet-of-2d-games_16: -7388377490281850600
+      make-sprite-sheet-of-2d-games_17: -3605420611989620587
+      make-sprite-sheet-of-2d-games_18: 384405304300769979
+      make-sprite-sheet-of-2d-games_19: -1868635985664731541
+      make-sprite-sheet-of-2d-games_2: -5984799785446535287
+      make-sprite-sheet-of-2d-games_20: -6865952878705043768
+      make-sprite-sheet-of-2d-games_21: 3632831252263807086
+      make-sprite-sheet-of-2d-games_22: -4932621482663805077
+      make-sprite-sheet-of-2d-games_23: -5177420301673086797
+      make-sprite-sheet-of-2d-games_24: 4498178467698994909
+      make-sprite-sheet-of-2d-games_25: 2946269289981928125
+      make-sprite-sheet-of-2d-games_26: 7551791964227950215
+      make-sprite-sheet-of-2d-games_27: 6795501896105456959
+      make-sprite-sheet-of-2d-games_28: -6287257629028277209
+      make-sprite-sheet-of-2d-games_29: -5758401857556702513
+      make-sprite-sheet-of-2d-games_3: -7542236682122979727
+      make-sprite-sheet-of-2d-games_30: 5180363746244324249
+      make-sprite-sheet-of-2d-games_31: 8748655378035467477
+      make-sprite-sheet-of-2d-games_32: -6454251658533041696
+      make-sprite-sheet-of-2d-games_33: -6708194087328509134
+      make-sprite-sheet-of-2d-games_34: -851572029750782955
+      make-sprite-sheet-of-2d-games_35: -4082983453733175125
+      make-sprite-sheet-of-2d-games_36: 656968945158893064
+      make-sprite-sheet-of-2d-games_37: -6223953000658635979
+      make-sprite-sheet-of-2d-games_38: -2594037316756815898
+      make-sprite-sheet-of-2d-games_39: 6257220885095256508
+      make-sprite-sheet-of-2d-games_4: 452283373649641259
+      make-sprite-sheet-of-2d-games_40: -5731055650832038658
+      make-sprite-sheet-of-2d-games_41: 5503990399801869518
+      make-sprite-sheet-of-2d-games_42: -8281525160125013778
+      make-sprite-sheet-of-2d-games_43: 4484404545705781058
+      make-sprite-sheet-of-2d-games_44: 7521502503161510890
+      make-sprite-sheet-of-2d-games_45: 6510750220545803102
+      make-sprite-sheet-of-2d-games_46: -3929905381698897171
+      make-sprite-sheet-of-2d-games_47: -8795277098911015727
+      make-sprite-sheet-of-2d-games_48: -1214194898481577705
+      make-sprite-sheet-of-2d-games_49: -5223296582417358466
+      make-sprite-sheet-of-2d-games_5: 6413419513133684852
+      make-sprite-sheet-of-2d-games_50: -7160444077262310475
+      make-sprite-sheet-of-2d-games_51: -4310569865443966496
+      make-sprite-sheet-of-2d-games_52: 6959670820612691842
+      make-sprite-sheet-of-2d-games_53: 8748054989005594358
+      make-sprite-sheet-of-2d-games_54: 555675064880899543
+      make-sprite-sheet-of-2d-games_55: -7292986642250770387
+      make-sprite-sheet-of-2d-games_56: -1176969004904497556
+      make-sprite-sheet-of-2d-games_57: 2317845528695860492
+      make-sprite-sheet-of-2d-games_58: 4907895390416313067
+      make-sprite-sheet-of-2d-games_59: -2194534414249933178
+      make-sprite-sheet-of-2d-games_6: 2702806597748264240
+      make-sprite-sheet-of-2d-games_60: -3456017006945212710
+      make-sprite-sheet-of-2d-games_61: 6656507483243542219
+      make-sprite-sheet-of-2d-games_62: 11822025843160523
+      make-sprite-sheet-of-2d-games_63: 9170434600256691746
+      make-sprite-sheet-of-2d-games_64: -272974511985752923
+      make-sprite-sheet-of-2d-games_65: 7292570601529621705
+      make-sprite-sheet-of-2d-games_7: -1377033191222121722
+      make-sprite-sheet-of-2d-games_8: -430037112878882528
+      make-sprite-sheet-of-2d-games_9: -8155287901335261434
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
