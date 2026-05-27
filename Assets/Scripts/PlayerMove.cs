@@ -20,13 +20,18 @@ public class PlayerMove : MonoBehaviour
 
     [Header("Jump")]///Переменные для Jump
     public float jumpForce = 5f;
+    public float jumpHoldForce = 0.15f;
     public float maxJumpHoldTime = 0.3f;
     private float jumpDirection;
     public float jumpHorizontalForce = 5f;
     private float jumpHoldTimer;
-    
-    
+    public float normalGravity = 1f;
+    public float jumpGravity = 1.5f;
+
+
     [Header("AirControl")]///Переменные для AirControl
+    public float airDrag = 8f;
+
     public float minAirSpeed = 1.5f;
     public float airBrakeForce = 10f;
 
@@ -53,6 +58,10 @@ public class PlayerMove : MonoBehaviour
     public float wallJumpForceX = 2f;
     public float wallJumpForceY = 2f;
 
+    private bool jetpackLocked;
+    private float jetpackLockTimer;
+
+    public float jetpackDisableTime = 0.2f;
     public float wallJumpDisableTime = 0.2f;
 
     private bool isWallJumping;
@@ -63,7 +72,6 @@ public class PlayerMove : MonoBehaviour
     public float jetpackForce = 15f;
     public float maxJetpackSpeed = 3f;
     public float jetpackAirAcceleration = 10f;
-    public float normalGravity = 1f;
     public float jetpackGravity = 0.3f;
     public float oxygen = 100f;
     public float maxOxygen = 100f;
@@ -77,6 +85,8 @@ public class PlayerMove : MonoBehaviour
 
     void Start()
     {
+        playerbode.gravityScale = normalGravity;
+
         oxygen = maxOxygen;
 
         animator = GetComponent<Animator>();
@@ -86,6 +96,7 @@ public class PlayerMove : MonoBehaviour
     }
     void Update()
     {
+        HandleGravity();
         Move();
         WallJump();
         WallJumpTimer();
@@ -100,6 +111,28 @@ public class PlayerMove : MonoBehaviour
         UpdateAnimator();
     }
 
+    void HandleGravity()
+    {
+        // Jetpack важнее всего
+        if (!onGround && !jetpackLocked && Input.GetButton("Jetpack") && oxygen > 0)
+        {
+            playerbode.gravityScale = jetpackGravity;
+        }
+
+        // Удержание прыжка
+        else if (Input.GetButton("Jump") &&
+                 jumpHoldTimer > 0 &&
+                 playerbode.linearVelocity.y > 0)
+        {
+            playerbode.gravityScale = jumpGravity;
+        }
+
+        // Обычная гравитация
+        else
+        {
+            playerbode.gravityScale = normalGravity;
+        }
+    }
     void Move()////Отвечает за движение 
     {
         if (onGround == true)
@@ -112,23 +145,40 @@ public class PlayerMove : MonoBehaviour
     }
     void Jump()////Отвечает за прыжок 
     {
+        // НАЧАЛО ПРЫЖКА
         if (Input.GetButtonDown("Jump") && onGround)
         {
             jumpHoldTimer = maxJumpHoldTime;
 
+            // направление прыжка
             if (moveX != 0)
             {
                 jumpDirection = Mathf.Sign(moveX);
             }
             else
             {
-                jumpDirection = 0; // стоим на месте
+                jumpDirection = 0;
             }
 
+            // импульс
             playerbode.linearVelocity = new Vector2(
                 jumpDirection * jumpHorizontalForce,
                 jumpForce
             );
+        }
+
+        // удержание прыжка
+        if (Input.GetButton("Jump") &&
+            jumpHoldTimer > 0 &&
+            playerbode.linearVelocity.y > 0)
+        {
+            jumpHoldTimer -= Time.deltaTime;
+        }
+
+        // отпустили кнопку
+        if (Input.GetButtonUp("Jump"))
+        {
+            jumpHoldTimer = 0;
         }
     }
     void WallJumpTimer()////Отвечает за задержку прилепания  после прыжка после прыжка от стеныц 
@@ -142,6 +192,17 @@ public class PlayerMove : MonoBehaviour
                 isWallJumping = false;
             }
         }
+
+        // Блокировка Jetpack после wall jump
+        if (jetpackLocked)
+        {
+            jetpackLockTimer -= Time.deltaTime;
+
+            if (jetpackLockTimer <= 0)
+            {
+                jetpackLocked = false;
+            }
+        }
     }
     void AirControl()////Отвечает за контроль дальности прыжка в воздухе 
     {
@@ -150,19 +211,34 @@ public class PlayerMove : MonoBehaviour
             float input = Input.GetAxis("Horizontal");
             float velX = playerbode.linearVelocity.x;
 
-            // игнорируем почти нулевую скорость
-            if (Mathf.Abs(velX) > 0.1f && input != 0)
+            // Игрок НЕ нажимает направление
+            if (Mathf.Abs(input) < 0.1f)
             {
-                if (Mathf.Sign(input) != Mathf.Sign(velX))
-                {
-                    float newX = Mathf.MoveTowards(
-                        velX,
-                        Mathf.Sign(velX) * minAirSpeed,
-                        airBrakeForce * Time.deltaTime
-                    );
+                float newX = Mathf.MoveTowards(
+                    velX,
+                    0,
+                    airDrag * Time.deltaTime
+                );
 
-                    playerbode.linearVelocity = new Vector2(newX, playerbode.linearVelocity.y);
-                }
+                playerbode.linearVelocity = new Vector2(
+                    newX,
+                    playerbode.linearVelocity.y
+                );
+            }
+
+            // Игрок жмёт в противоположную сторону
+            else if (Mathf.Sign(input) != Mathf.Sign(velX))
+            {
+                float newX = Mathf.MoveTowards(
+                    velX,
+                    0,
+                    airBrakeForce * Time.deltaTime
+                );
+
+                playerbode.linearVelocity = new Vector2(
+                    newX,
+                    playerbode.linearVelocity.y
+                );
             }
         }
     }
@@ -246,16 +322,16 @@ public class PlayerMove : MonoBehaviour
 
             isWallJumping = true;
             wallJumpTimer = wallJumpDisableTime;
+
+            jetpackLocked = true;
+            jetpackLockTimer = jetpackDisableTime;
         }
     }
     void Jetpack() //// Отвечает за управление джетпаком
     {
-        if (!onGround && Input.GetButton("Jetpack") && oxygen > 0)
+        if (!onGround && !jetpackLocked && Input.GetButton("Jetpack") && oxygen > 0)
         {
             float input = Input.GetAxis("Horizontal");
-
-            // Ослабляем гравитацию
-            playerbode.gravityScale = jetpackGravity;
 
             // Управление в воздухе
             float targetSpeed = input * moveSpeed;
@@ -276,16 +352,12 @@ public class PlayerMove : MonoBehaviour
         }
         else
         {
-            // Возвращаем обычную гравитацию
-            playerbode.gravityScale = normalGravity;
-
             // Восстановление кислорода
             if (onGround)
             {
                 oxygen += oxygenRecoverSpeed * Time.deltaTime;
             }
         }
-
         // Ограничение кислорода
         oxygen = Mathf.Clamp(oxygen, 0, maxOxygen);
 
