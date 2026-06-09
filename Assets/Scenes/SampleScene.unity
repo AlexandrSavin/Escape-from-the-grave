@@ -738,16 +738,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   normalPlatformPrefab: {fileID: 116814366}
   finishPlatformPrefab: {fileID: 0}
-  yOffset: 1.8
-  xRandomRange: 6
+  yOffset: 2
+  xRandomRange: 9
   platformWidth: 1
-  minGap: 2
-  minPlatformsPerStep: 2
-  maxPlatformsPerStep: 6
-  startGenerationHeight: 6
-  preGenerateHeight: 10
+  minGap: 3
+  minPlatformsPerStep: 3
+  maxPlatformsPerStep: 5
+  startGenerationHeight: 7.3
   winTextObject: {fileID: 142352983}
-  winHeight: 20
+  winHeight: 30
   finishHeight: 30
 --- !u!1 &225590538
 GameObject:
@@ -2373,6 +2372,10 @@ PrefabInstance:
       propertyPath: oxygenText
       value: 
       objectReference: {fileID: 60759626}
+    - target: {fileID: 7884208868279106942, guid: 5aee8dd379d638741915db76e65c9bbd, type: 3}
+      propertyPath: minAirSpeed
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 7884208868279106942, guid: 5aee8dd379d638741915db76e65c9bbd, type: 3}
       propertyPath: jetpackGravity
       value: 0.6

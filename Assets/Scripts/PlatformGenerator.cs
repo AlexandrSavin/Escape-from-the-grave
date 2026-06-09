@@ -8,10 +8,10 @@ public class PlatformGenerator : MonoBehaviour
     public GameObject finishPlatformPrefab;
 
     [Header("Настройки")]
-    public float yOffset = 2.0f;            // Вертикальное расстояние
-    public float xRandomRange = 5.0f;       // Широкий разброс!
-    public float platformWidth = 1.5f;      // Ширина вашего спрайта платформы
-    public float minGap = 0.5f;             // Минимальный зазор
+    public float yOffset = 2.0f;
+    public float xRandomRange = 5.0f;
+    public float platformWidth = 1.5f;
+    public float minGap = 0.5f;
 
     [Header("Количество на одной высоте")]
     public int minPlatformsPerStep = 1;
@@ -19,7 +19,6 @@ public class PlatformGenerator : MonoBehaviour
 
     [Header("Высота начала генерации")]
     public float startGenerationHeight = 9f;
-    public float preGenerateHeight = 10f;   // Чтобы сразу видно было разброс
 
     [Header("UI - Текст победы")]
     public GameObject winTextObject;
@@ -28,13 +27,11 @@ public class PlatformGenerator : MonoBehaviour
 
     [Header("Финиш")]
     public float finishHeight = 50f;
-    private bool levelFinished = false;
 
     private float lastSpawnY;
     private Transform player;
     private List<float> lastRowXPositions = new List<float>();
     private List<float> currentRowXPositions = new List<float>();
-    private bool hasPreGenerated = false;
 
     void Start()
     {
@@ -48,13 +45,22 @@ public class PlatformGenerator : MonoBehaviour
 
         if (winTextObject != null)
             winTextObject.SetActive(false);
+
+        // ГЕНЕРАЦИЯ ВСЕЙ КАРТЫ ПРИ СТАРТЕ
+        while (lastSpawnY < finishHeight)
+        {
+            GenerateOneRow();
+        }
+
+        // Генерация финишной платформы
+        SpawnFinishPlatform();
     }
 
     void Update()
     {
-        if (player == null || levelFinished) return;
+        if (player == null) return;
 
-        // АКТИВАЦИЯ ТЕКСТА (С ИСПРАВЛЕНИЕМ)
+        // АКТИВАЦИЯ ТЕКСТА ПРИ ПОБЕДЕ
         if (!winTextShown && player.position.y >= winHeight)
         {
             if (winTextObject != null)
@@ -70,31 +76,7 @@ public class PlatformGenerator : MonoBehaviour
                 }
 
                 winTextShown = true;
-                Debug.Log("Текст активирован!");
-            }
-        }
-
-        if (lastSpawnY >= finishHeight)
-        {
-            SpawnFinishPlatform();
-            levelFinished = true;
-            return;
-        }
-
-        if (player.position.y > lastSpawnY)
-        {
-            if (!hasPreGenerated)
-            {
-                float targetHeight = player.position.y + preGenerateHeight;
-                while (lastSpawnY < targetHeight)
-                {
-                    GenerateOneRow();
-                }
-                hasPreGenerated = true;
-            }
-            else
-            {
-                GenerateOneRow();
+                Debug.Log("Текст победы активирован!");
             }
         }
     }
